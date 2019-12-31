@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding 0;
+    font-family: Arial;
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    height: 100%;
+    background-color: #000;
+}
+
+
+
+header {
+    float: left;
+    width: 100%;
+    height: 100px:
+    background: #000;
+    z-index: 1;
+}
+
+header img {
+    padding: 17px 10px;
+    height: 30px;
+    float: left;
+    line-height: 60px;
+}
+
+header ul {
+    float: left;
+}
+
+header ul li {
+    float: left;
+    position: relative;
+    line-height: 55px;
+}
+
+header ul li a {
+    display: block;
+    font-size: 18px;
+    padding: 5px 15px;
+}
+
+header ul li ul {
+    display: none;
+    position: absolute;
+    background: #000;
+    padding: 1px;
+    border-radius: 0 0 4px 4px;
+    box-shadow: 1px 1px 1px rgba(255,255,255,.1);
+}
+header ul li:hover ul {
+    display: block;
+}
+
+header ul li ul li {
+    width: 180px;
+    border-radius: 4px;
+}
+
+header ul li ul a {
+    font-size: 16px;
+    padding: 1px 14px;
+}
+
+header ul li::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 1px;
+    left: 50%;
+    bottom: 10;
+    background-color: #fff;
+    transition: all .26s ease;
+}
+
+header ul li:hover::after {
+    width: 80%;
+    left: 10%;
+}
+
+header ul li ul li::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 1px;
+    left: 25%;
+    bottom: 10;
+    background-color: #fff;
+    transition: all .26s ease;
+}
+
+header ul li ul li:hover::after {
+    width: 50%;
+    left: 0;
+    right: 50%;
+    width: 50%;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 70px;
+    text-decoration: underline;
+}
+
+div iframe {
+    padding: 5px;
+}
